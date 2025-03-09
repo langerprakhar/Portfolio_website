@@ -1,19 +1,18 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { ArrowDown } from "lucide-react"
-// @ts-ignore
-import Typical from "react-typical";
+import { Button } from "@/components/ui/button";
+import { ArrowDown } from "lucide-react";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId)
+    const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" })
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
     } else {
-      console.error(`Section with ID '${sectionId}' not found.`)
+      console.error(`Section with ID '${sectionId}' not found.`);
     }
-  }
+  };
 
   return (
     <section
@@ -28,16 +27,25 @@ export default function HeroSection() {
 
       <div className="container mx-auto px-4 text-center">
         <div className="animate-in">
-          <span className="inline-block text-primary font-medium mb-4">Welcome to my portfolio!</span>
+          <span className="inline-block text-primary font-medium mb-4">
+            Welcome to my portfolio!
+          </span>
         </div>
 
         {/* Typing Effect for "Hi, I'm Prakhar" */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-in stagger-1">
-          <Typical 
-            steps={["Hi, I'm ", 1000, "Hi, I'm Prakhar", 1500]} 
-            wrapper="span"
-            className="green-gradient-text"
-          />
+          Hi, I'm{" "}
+          <span className="green-gradient-text">
+            <Typewriter
+              words={["Prakhar"]}
+              loop={1}
+              cursor
+              cursorStyle="_"
+              typeSpeed={100}
+              deleteSpeed={50}
+              delaySpeed={1500}
+            />
+          </span>
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-in stagger-2">
@@ -45,7 +53,11 @@ export default function HeroSection() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12 animate-in stagger-3">
-          <Button size="lg" className="green-glow" onClick={() => scrollToSection("projects")}>
+          <Button
+            size="lg"
+            className="green-glow"
+            onClick={() => scrollToSection("projects")}
+          >
             View My Work
           </Button>
           <Button
@@ -69,5 +81,5 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
