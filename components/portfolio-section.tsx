@@ -12,7 +12,7 @@ export default function PortfolioSection() {
         "Developed a model identifying 400+ Indian frog species with 90%+ accuracy using EfficientNetV2.",
       technologies: ["Python", "OpenCV", "EfficientNetV2"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/langerprakhar/Frog_Species_Identification",
     },
     {
       title: "Email Automation System",
@@ -22,7 +22,7 @@ export default function PortfolioSection() {
         "Automated email outreach to professors of different universities, integrating Google APIs for scheduling.",
       technologies: ["Python", "Selenium", "SMTP"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/langerprakhar/WebScraping_Email_Automation",
     },
     {
       title: "Invisible Watermarking using FHE",
@@ -32,7 +32,7 @@ export default function PortfolioSection() {
         "Implemented secure watermarking using Zama.ai’s Concrete-ML library for data privacy.",
       technologies: ["Python", "Concrete-ML", "Numpy", "Gradio", "PIL"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/langerprakhar/FHE_Watermarking",
     },
     {
       title: "Internshala Automation Project",
@@ -42,7 +42,7 @@ export default function PortfolioSection() {
         "Automated application processes on Internshala, reducing manual effort through scripting.",
       technologies: ["Python", "Selenium", "Automation"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/langerprakhar/Internshala-Internship-Automation",
     },
     {
       title: "Linktree Backend Development",
@@ -52,7 +52,7 @@ export default function PortfolioSection() {
         "Developed a scalable backend for a Linktree-like platform with authentication and referral tracking.",
       technologies: ["Node.js", "Express", "PostgreSQL", "JWT"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/langerprakhar/Vomychat_Assignment",
     },
     {
       title: "Old Age Home Management System",
