@@ -55,7 +55,7 @@ export default function ContactSection() {
           </h2>
           <div className="section-divider"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or want to learn more about my services? I'd love to hear from you!
+            Have a project in mind or want to learn more about my projects? I'd love to collaborate with you!
           </p>
         </div>
 
